@@ -1,3 +1,18 @@
+# Deploying a Scalable ML Pipeline with FastAPI
+
+Repo: https://github.com/Emyroyale/Deploying-a-Scalable-ML-Pipeline-with-FastAPI
+
+This project trains a Random Forest classifier on U.S. Census data to
+predict whether an individual's income exceeds $50,000/year, and
+deploys it as a RESTful API using FastAPI. It includes a full ML
+pipeline (`train_model.py`), unit tests (`test_ml.py`), model
+performance monitoring across data slices (`slice_output.txt`), and a
+live inference API (`main.py`, `local_api.py`). See
+`model_card_template.md` for full model details, training data, and
+evaluation metrics.
+
+---
+
 Working in a command line environment is recommended for ease of use with git and dvc. If on Windows, WSL1 or 2 is recommended.
 
 # Environment Set up (pip or conda)
