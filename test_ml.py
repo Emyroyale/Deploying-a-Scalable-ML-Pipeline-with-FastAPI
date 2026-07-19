@@ -1,9 +1,6 @@
 import numpy as np
-import pandas as pd
 import pytest
 from sklearn.ensemble import RandomForestClassifier
-
-from ml.data import process_data
 from ml.model import compute_model_metrics, inference, train_model
 
 
@@ -15,6 +12,7 @@ def test_train_model_returns_random_forest():
     y_train = np.random.randint(0, 2, 20)
     model = train_model(X_train, y_train)
     assert isinstance(model, RandomForestClassifier)
+
 
 def test_inference_returns_expected_shape_and_type():
     """
